@@ -6,12 +6,14 @@ A comprehensive, feature-rich desktop application built using **Java** and **Jav
 
 ## Project Structure & Architecture
 
-The project follows a clean object-oriented design and is organized into logical packages for easy maintenance and scalability:
+The project follows a clean object-oriented design and is organized into logical folders for easy maintenance and scalability:
 
-* **`application`**: The core entry point of the app containing `Main.java` which launches the JavaFX lifecycle and applies the global styles (`application.css`).
-* **`controllers`**: Contains the controller classes (`DashboardController.java`, `MainController.java`) handling the UI logic, user interactions, and view changes.
-* **`models`**: Houses the data structures and business logic entities (`Account.java`, `Budget.java`, `Expense.java`, `Income.java`) that manage the application's underlying data state.
-* **`views`**: Contains the modular JavaFX design classes (`DashboardView.java`, `ExpenseView.java`, `IncomeView.java`, `NavbarView.java`, `ReportView.java`, `BudgetView.java`) separating the graphical layout from the logic.
+* **`src/`**: The core source folder containing all the Java logic and packages:
+  * **`application`**: Contains `Main.java` which launches the JavaFX lifecycle and applies the global styles (`application.css`).
+  * **`controllers`**: Contains the controller classes (`DashboardController.java`, `MainController.java`) handling the UI logic and user interactions.
+  * **`models`**: Houses the data structures (`Account.java`, `Budget.java`, `Expense.java`, `Income.java`) that manage the application's underlying data.
+  * **`views`**: Contains the modular JavaFX design layout classes (`DashboardView.java`, `ExpenseView.java`, `IncomeView.java`, `NavbarView.java`, `ReportView.java`, `BudgetView.java`).
+* **`lib/`**: Contains the external JavaFX library `.jar` files required to build and run the graphical user interface.
 
 ---
 
@@ -40,14 +42,12 @@ The project follows a clean object-oriented design and is organized into logical
 ### Prerequisites
 Make sure you have the following installed on your machine:
 * Java Development Kit (JDK) 11 or higher
-* JavaFX SDK configured in your IDE (Eclipse, IntelliJ IDEA, or NetBeans)
+* An IDE (Eclipse, IntelliJ IDEA, or NetBeans)
 
 ### How to Run the Project
 1. Clone this repository to your local machine:
    ```bash
    git clone [https://github.com/YOUR_USERNAME/Budget-Planning-System.git](https://github.com/YOUR_USERNAME/Budget-Planning-System.git)
-
-   ---
 
 ## License & Usage
 
