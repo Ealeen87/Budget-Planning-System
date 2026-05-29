@@ -6,15 +6,18 @@ A comprehensive, feature-rich desktop application built using **Java** and **Jav
 
 ## Project Structure & Architecture
 
-The project follows a clean object-oriented design and is organized into logical folders for easy maintenance and scalability:
+The project follows a clean, organized package structure tailored for structured application development:
 
-* **`src/`**: The core source folder containing all the Java logic and packages:
-  * **`application`**: Contains `Main.java` which launches the JavaFX lifecycle and applies the global styles (`application.css`).
-  * **`controllers`**: Contains the controller classes (`DashboardController.java`, `MainController.java`) handling the UI logic and user interactions.
-  * **`models`**: Houses the data structures (`Account.java`, `Budget.java`, `Expense.java`, `Income.java`) that manage the application's underlying data.
-  * **`views`**: Contains the modular JavaFX design layout classes (`DashboardView.java`, `ExpenseView.java`, `IncomeView.java`, `NavbarView.java`, `ReportView.java`, `BudgetView.java`).
-* **`lib/`**: Contains the external JavaFX library `.jar` files required to build and run the graphical user interface.
-
+* **`src/com/budget/app/`**: The root package containing the core application logic:
+  * **`Main.java`**: Launches the JavaFX application lifecycle.
+  * **`AppState.java`**: Manages global application states, data models, and user session values.
+  * **`Navigator.java`**: Handles routing, view switching, and navigation across different interface layouts.
+  * **`UI.java`**: Manages global user interface components and theme elements.
+  * **`pages/`**: A specialized module package housing individual application view screens:
+    * `LoginPage.java` & `DashboardPage.java`
+    * `IncomePage.java` & `ExpensePage.java`
+    * `BudgetPage.java` & `SummaryPage.java`
+* **`pom.xml`**: The core Maven configuration file managing dependencies, building instructions, and compiler paths.
 ---
 
 ## Features
