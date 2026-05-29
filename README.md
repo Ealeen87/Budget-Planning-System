@@ -48,7 +48,6 @@ Make sure you have the following installed on your machine:
 1. Clone this repository to your local machine:
    ```bash
    git clone [https://github.com/YOUR_USERNAME/Budget-Planning-System.git](https://github.com/YOUR_USERNAME/Budget-Planning-System.git)
-
 ## License & Usage
 
 This project is open for anyone to download, view, and run for personal or educational purposes! However, all original code, design assets, and architecture belong to the authors. Please provide proper attribution if you are referencing this work.
